@@ -55,14 +55,21 @@ if (args.length !== 1) {
   process.exit(-1)
 }
 
-// read version number
-const versionFile = __dirname + '/version.json'
+// read version number from package json
+const packageJsonFile = __dirname + '../package.json'
 let version = 'Unknown'
-if (fs.existsSync(versionFile)) {
-  version = fs.readFileSync(versionFile, { encoding: 'utf8' })
+if (fs.existsSync(packageJsonFile)) {
+  try {
+    const fileContent = fs.readFileSync(packageJsonFile, { encoding: 'utf8' })
+    const packageJson = <{ version?: string }>JSON.parse(fileContent)
+    if (packageJson.version) {
+      version = packageJson.version
+    }
+  } catch (error) {
+    //nothing to be done
+  }
 }
 console.log('heartbeat-led v' + version)
-
 
 const pin = Number.parseInt(args[0])
 heartbeatLED = new HeartbeatLED(pin)

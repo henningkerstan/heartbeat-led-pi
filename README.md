@@ -23,13 +23,13 @@ This framework is available as a Node.js-module. You can thus use Node.js' packa
 
 For using the standalone application it is best to install the package globally by running the following command.
 
-    sudo npm i -g heartbeat-led-pi
+    sudo npm i -g --unsafe-perm @henningkerstan/heartbeat-led-pi
 
 ### 2.2 Library
 
 For using the library in your own application install the package locally by running the following command
 
-    sudo npm i heartbeat-led-pi
+    npm i @henningkerstan/heartbeat-led-pi
 
 in your project's directory.
 

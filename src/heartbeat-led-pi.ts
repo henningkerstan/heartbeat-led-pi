@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // Project: heartbeat-led-pi
 // File: heartbeat-led-pi.ts
 //

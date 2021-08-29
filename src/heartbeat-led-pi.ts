@@ -46,15 +46,6 @@ process.on('SIGHUP', () => {
   void shutdown('SIGHUP')
 })
 
-const args = process.argv.slice(2)
-
-if (args.length !== 1) {
-  console.log(
-    'Usage: "heartbeat-led-pi PIN", where PIN is a valid GPIO pin number.'
-  )
-  process.exit(-1)
-}
-
 // read version number from package json
 const packageJsonFile = __dirname + '/../package.json'
 let version = 'Unknown'
@@ -70,6 +61,15 @@ if (fs.existsSync(packageJsonFile)) {
   }
 }
 console.log('heartbeat-led v' + version)
+
+const args = process.argv.slice(2)
+
+if (args.length !== 1) {
+  console.log(
+    'Usage: "heartbeat-led-pi PIN", where PIN is a valid GPIO pin number.'
+  )
+  process.exit(-1)
+}
 
 const pin = Number.parseInt(args[0])
 heartbeatLED = new HeartbeatLED(pin)

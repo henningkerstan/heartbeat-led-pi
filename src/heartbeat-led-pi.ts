@@ -17,6 +17,7 @@
 // limitations under the License.
 
 import { HeartbeatLED } from './HeartbeatLED'
+import fs from 'fs'
 
 let heartbeatLED: HeartbeatLED = undefined
 
@@ -53,6 +54,15 @@ if (args.length !== 1) {
   )
   process.exit(-1)
 }
+
+// read version number
+const versionFile = __dirname + '/version.json'
+let version = 'Unknown'
+if (fs.existsSync(versionFile)) {
+  version = fs.readFileSync(versionFile, { encoding: 'utf8' })
+}
+console.log('heartbeat-led v' + version)
+
 
 const pin = Number.parseInt(args[0])
 heartbeatLED = new HeartbeatLED(pin)

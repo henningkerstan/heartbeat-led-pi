@@ -27,7 +27,7 @@ For using the standalone application it is best to install the package globally 
 
 ### 2.2 Library
 
-For using the standalone application it is best to install the package locally by running the following command
+For using the library in your own application install the package locally by running the following command
 
     sudo npm i heartbeat-led-pi
 

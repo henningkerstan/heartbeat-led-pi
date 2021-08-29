@@ -52,6 +52,7 @@ export class HeartbeatLED {
       this._heartbeatGpio.writeSync(0)
       return
     }
+    this._heartbeatGpio.writeSync(1)
     setTimeout(this.ledOff.bind(this), 10)
   }
 

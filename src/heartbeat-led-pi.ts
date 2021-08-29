@@ -56,7 +56,7 @@ if (args.length !== 1) {
 }
 
 // read version number from package json
-const packageJsonFile = __dirname + '../package.json'
+const packageJsonFile = __dirname + '/../package.json'
 let version = 'Unknown'
 if (fs.existsSync(packageJsonFile)) {
   try {

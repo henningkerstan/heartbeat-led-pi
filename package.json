@@ -1,0 +1,54 @@
+{
+  "name": "@henningkerstan/heartbeat-led-pi",
+  "version": "0.0.0",
+  "description": "A TypeScript implementation of a heartbeat LED for Node.js on a Raspberry Pi.",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "doc": "npx typedoc",
+    "build": "rimraf ./lib/ && npx tsc",
+    "all": "npm run build && npm run build && npm run doc",
+    "lint": "eslint --ignore-path .gitignore --fix src/**/*.ts",
+    "prepublishOnly": "npm run license-checker && npm run build",
+    "version": "node .version.js",
+    "license-checker": "npx license-checker --summary --production --unknown --onlyAllow \"Apache-2.0;MIT;BSD;ISC\""
+  },
+  "bin": {
+    "heartbeat-led-pi": "./lib/heartbeat-led-pi.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henningkerstan/heartbeat-led-pi.git"
+  },
+  "author": "Henning Kerstan",
+  "license": "Apache-2.0",
+  "keywords": [
+    "heartbeat",
+    "heartbeat LED",
+    "LED",
+    "Raspberry Pi"
+  ],
+  "devDependencies": {
+    "@henningkerstan/eslint-config": "^0.0.3",
+    "@henningkerstan/prettier-config": "^1.0.0",
+    "@types/node": "^16.7.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "license-checker": "^25.0.1",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typedoc": "^0.21.6",
+    "typescript": "^4.3.5"
+  },
+  "prettier": "@henningkerstan/prettier-config",
+  "dependencies": {
+    "onoff": "^6.0.3"
+  }
+}

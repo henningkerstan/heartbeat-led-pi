@@ -1,4 +1,4 @@
-// Project: thermostat-pi-dht
+// Project: heartbeat-led-pi
 // File: heartbeat-led-pi.ts
 //
 // Copyright 2021 Henning Kerstan
@@ -54,7 +54,6 @@ if (args.length !== 1) {
 }
 
 const pin = Number.parseInt(args[0])
-
 heartbeatLED = new HeartbeatLED(pin)
 console.log('Starting heartbeat on GPIO pin ' + pin.toString())
 heartbeatLED.start()

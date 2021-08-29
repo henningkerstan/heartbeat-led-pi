@@ -1,4 +1,4 @@
-// Project: thermostat-pi-dht
+// Project: heartbeat-led-pi
 // File: index.ts
 //
 // Copyright 2021 Henning Kerstan

@@ -53,5 +53,8 @@ if (args.length !== 1) {
   process.exit(-1)
 }
 
-heartbeatLED = new HeartbeatLED(Number.parseInt(args[0]))
+const pin = Number.parseInt(args[0])
+
+heartbeatLED = new HeartbeatLED(pin)
+console.log('Starting heartbeat on GPIO pin ' + pin.toString())
 heartbeatLED.start()

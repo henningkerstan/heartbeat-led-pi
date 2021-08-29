@@ -60,7 +60,7 @@ if (fs.existsSync(packageJsonFile)) {
     //nothing to be done
   }
 }
-console.log('heartbeat-led v' + version)
+console.log('heartbeat-led-pi v' + version)
 
 const args = process.argv.slice(2)
 

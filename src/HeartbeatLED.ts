@@ -23,8 +23,8 @@ import { Gpio } from 'onoff'
  */
 export class HeartbeatLED {
   /** GPIO pin to which the heartbeat LED is connected. */
-  public get heartbeatPin(): number {
-    return this._heartbeatPin
+  public get pin(): number {
+    return this._pin
   }
 
   /** Starts the heartbeat. */
@@ -33,7 +33,7 @@ export class HeartbeatLED {
       return
     }
 
-    if (!this._heartbeatGpio) {
+    if (!this._gpio) {
       return
     }
 
@@ -49,15 +49,15 @@ export class HeartbeatLED {
 
   private ledOn() {
     if (!this._isActive) {
-      this._heartbeatGpio.writeSync(0)
+      this._gpio.writeSync(0)
       return
     }
-    this._heartbeatGpio.writeSync(1)
+    this._gpio.writeSync(1)
     setTimeout(this.ledOff.bind(this), 10)
   }
 
   private ledOff() {
-    this._heartbeatGpio.writeSync(0)
+    this._gpio.writeSync(0)
 
     if (!this._isActive) {
       return
@@ -70,16 +70,16 @@ export class HeartbeatLED {
    * @param pin The GPIO pin to which the LED is connected.
    */
   constructor(pin: number) {
-    this._heartbeatPin = pin
-    this._heartbeatGpio = new Gpio(pin, 'out')
+    this._pin = pin
+    this._gpio = new Gpio(pin, 'out')
   }
 
   // Private members
   /** GPIO pin to which the heartbeat LED is connected. */
-  private _heartbeatPin: number = undefined
+  private _pin: number = undefined
 
   /** GPIO to which the heartbeat LED is connected. */
-  private _heartbeatGpio: Gpio = undefined
+  private _gpio: Gpio = undefined
 
   private _isActive = false
 }

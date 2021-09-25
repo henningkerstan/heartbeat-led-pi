@@ -1,169 +1,82 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@henningkerstan/heartbeat-led-pi - v0.0.3</title>
-	<meta name="description" content="Documentation for @henningkerstan/heartbeat-led-pi - v0.0.3">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="index.html" class="title">@henningkerstan/heartbeat-led-pi - v0.0.3</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<h1>@henningkerstan/heartbeat-led-pi - v0.0.3</h1>
-		</div>
-	</div>
-</header>
-<div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#heartbeat-led-pi" id="heartbeat-led-pi" style="color: inherit; text-decoration: none;">
-					<h1>heartbeat-led-pi</h1>
-				</a>
-				<p>A TypeScript implementation of a heartbeat LED for Node.js on a Raspberry Pi.</p>
-				<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
-					<h2>Table of Contents</h2>
-				</a>
-				<ol>
-					<li><a href="#1-description">Description</a></li>
-					<li><a href="#2-installation">Installation</a></li>
-					<li><a href="#3-usage">Usage</a></li>
-					<li><a href="#4-contributing">Contributing</a></li>
-					<li><a href="#5-version-history">Version History</a></li>
-					<li><a href="#6-license">License</a></li>
-				</ol>
-				<a href="#1-description" id="1-description" style="color: inherit; text-decoration: none;">
-					<h2>1. Description</h2>
-				</a>
-				<p>This is a simple TypeScript implementation of a heartbeat LED for Node.js on a Raspberry Pi. It pulses a LED connected to a GPIO every 2s for 10ms.</p>
-				<a href="#2-installation" id="2-installation" style="color: inherit; text-decoration: none;">
-					<h2>2. Installation</h2>
-				</a>
-				<p>This framework is available as a Node.js-module. You can thus use Node.js&#39; package manager <code>npm</code> to install the latest production version from the <a href="https://npmjs.com">npm registry</a>. Depending on your use case, the installation method differs slightly.</p>
-				<a href="#21-standalone-application" id="21-standalone-application" style="color: inherit; text-decoration: none;">
-					<h3>2.1 Standalone application</h3>
-				</a>
-				<p>For using the standalone application it is best to install the package globally by running the following command.</p>
-				<pre><code><span style="color: #001080">sudo</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">i</span><span style="color: #000000"> -</span><span style="color: #001080">g</span><span style="color: #000000"> --</span><span style="color: #001080">unsafe</span><span style="color: #000000">-</span><span style="color: #001080">perm</span><span style="color: #000000"> @</span><span style="color: #001080">henningkerstan</span><span style="color: #000000">/</span><span style="color: #001080">heartbeat</span><span style="color: #000000">-</span><span style="color: #001080">led</span><span style="color: #000000">-</span><span style="color: #001080">pi</span>
+<!DOCTYPE html><html class="default no-js"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>@henningkerstan/heartbeat-led-pi - v1.0.0</title><meta name="description" content="Documentation for @henningkerstan/heartbeat-led-pi - v1.0.0"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">@henningkerstan/heartbeat-led-pi - v1.0.0</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1> @henningkerstan/heartbeat-led-pi - v1.0.0</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#heartbeat-led-pi" id="heartbeat-led-pi" style="color: inherit; text-decoration: none;">
+  <h1>heartbeat-led-pi</h1>
+</a>
+<p>A TypeScript implementation of a heartbeat LED for Node.js on a Raspberry Pi.</p>
+
+<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
+  <h2>Table of Contents</h2>
+</a>
+<ol>
+<li><a href="#1-description">Description</a></li>
+<li><a href="#2-installation">Installation</a></li>
+<li><a href="#3-usage">Usage</a></li>
+<li><a href="#4-contributing">Contributing</a></li>
+<li><a href="#5-version-history">Version History</a></li>
+<li><a href="#6-license">License</a></li>
+</ol>
+
+<a href="#1-description" id="1-description" style="color: inherit; text-decoration: none;">
+  <h2>1. Description</h2>
+</a>
+<p>This is a simple TypeScript implementation of a heartbeat LED for Node.js on a Raspberry Pi. It pulses a LED connected to a GPIO every 2s for 10ms.</p>
+
+<a href="#2-installation" id="2-installation" style="color: inherit; text-decoration: none;">
+  <h2>2. Installation</h2>
+</a>
+<p>This framework is available as a Node.js-module. You can thus use Node.js&#39; package manager <code>npm</code> to install the latest production version from the <a href="https://npmjs.com">npm registry</a>. Depending on your use case, the installation method differs slightly.</p>
+
+<a href="#21-standalone-application" id="21-standalone-application" style="color: inherit; text-decoration: none;">
+  <h3>2.1 Standalone application</h3>
+</a>
+<p>For using the standalone application it is best to install the package globally by running the following command.</p>
+<pre><code><span class="hl-0">sudo</span><span class="hl-1"> </span><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">i</span><span class="hl-1"> -</span><span class="hl-0">g</span><span class="hl-1"> --</span><span class="hl-0">unsafe</span><span class="hl-1">-</span><span class="hl-0">perm</span><span class="hl-1"> @</span><span class="hl-0">henningkerstan</span><span class="hl-1">/</span><span class="hl-0">heartbeat</span><span class="hl-1">-</span><span class="hl-0">led</span><span class="hl-1">-</span><span class="hl-0">pi</span>
 </code></pre>
-				<a href="#22-library" id="22-library" style="color: inherit; text-decoration: none;">
-					<h3>2.2 Library</h3>
-				</a>
-				<p>For using the library in your own application install the package locally by running the following command</p>
-				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">i</span><span style="color: #000000"> @</span><span style="color: #001080">henningkerstan</span><span style="color: #000000">/</span><span style="color: #001080">heartbeat</span><span style="color: #000000">-</span><span style="color: #001080">led</span><span style="color: #000000">-</span><span style="color: #001080">pi</span>
+
+<a href="#22-library" id="22-library" style="color: inherit; text-decoration: none;">
+  <h3>2.2 Library</h3>
+</a>
+<p>For using the library in your own application install the package locally by running the following command</p>
+<pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">i</span><span class="hl-1"> @</span><span class="hl-0">henningkerstan</span><span class="hl-1">/</span><span class="hl-0">heartbeat</span><span class="hl-1">-</span><span class="hl-0">led</span><span class="hl-1">-</span><span class="hl-0">pi</span>
 </code></pre>
-				<p>in your project&#39;s directory.</p>
-				<a href="#3-usage" id="3-usage" style="color: inherit; text-decoration: none;">
-					<h2>3. Usage</h2>
-				</a>
-				<a href="#31-standalone-application" id="31-standalone-application" style="color: inherit; text-decoration: none;">
-					<h3>3.1 Standalone application</h3>
-				</a>
-				<p>Once the package is installed, you can run it with</p>
-				<pre><code><span style="color: #001080">heartbeat</span><span style="color: #000000">-</span><span style="color: #001080">led</span><span style="color: #000000">-</span><span style="color: #001080">pi</span><span style="color: #000000"> </span><span style="color: #098658">4</span>
+<p>in your project&#39;s directory.</p>
+
+<a href="#3-usage" id="3-usage" style="color: inherit; text-decoration: none;">
+  <h2>3. Usage</h2>
+</a>
+
+<a href="#31-standalone-application" id="31-standalone-application" style="color: inherit; text-decoration: none;">
+  <h3>3.1 Standalone application</h3>
+</a>
+<p>Once the package is installed, you can run it with</p>
+<pre><code><span class="hl-0">heartbeat</span><span class="hl-1">-</span><span class="hl-0">led</span><span class="hl-1">-</span><span class="hl-0">pi</span><span class="hl-1"> </span><span class="hl-2">4</span>
 </code></pre>
-				<p>if your LED is connected to GPIO pin 4; otherwise simply change to the GPIO pin you use.</p>
-				<a href="#32-use-the-library-in-your-own-application" id="32-use-the-library-in-your-own-application" style="color: inherit; text-decoration: none;">
-					<h3>3.2 Use the library in your own application</h3>
-				</a>
-				<p>Since this framework is written in TypeScript, you can use it both with TypeScript as well as with plain JavaScript. Below you can find short examples to get you started in both languages.</p>
-				<p>The library also comes with an online <a href="https://henningkerstan.github.io/heartbeat-led-pi/">documentation</a>. A good starting point for further reading is the <a href="https://henningkerstan.github.io/heartbeat-led-pi/classes/HeartbeatLED.HeartbeatLED-1.html">documentation of the HeartbeatLED class</a>. Moreover, as this documentation is generated from source code comments using <a href="https://typedoc.org">TypeDoc</a>, a supported editor (like <a href="https://code.visualstudio.com/">Visual Studio Code</a>) can provide on-the-fly information on functions, parameters, etc..</p>
-				<p>All major functionality is contained in the <a href="https://henningkerstan.github.io/heartbeat-led-pi/classes/HeartbeatLED.HeartbeatLED-1.html">HeartbeatLED class</a>, hence you will most likely only need to import this class:</p>
-				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">HeartbeatLED</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;heartbeat-led-pi&#039;</span>
+<p>if your LED is connected to GPIO pin 4; otherwise simply change to the GPIO pin you use.</p>
+
+<a href="#32-use-the-library-in-your-own-application" id="32-use-the-library-in-your-own-application" style="color: inherit; text-decoration: none;">
+  <h3>3.2 Use the library in your own application</h3>
+</a>
+<p>Since this framework is written in TypeScript, you can use it both with TypeScript as well as with plain JavaScript. Below you can find short examples to get you started in both languages.</p>
+<p>The library also comes with an online <a href="https://henningkerstan.github.io/heartbeat-led-pi/">documentation</a>. A good starting point for further reading is the <a href="https://henningkerstan.github.io/heartbeat-led-pi/classes/HeartbeatLED.HeartbeatLED-1.html">documentation of the HeartbeatLED class</a>. Moreover, as this documentation is generated from source code comments using <a href="https://typedoc.org">TypeDoc</a>, a supported editor (like <a href="https://code.visualstudio.com/">Visual Studio Code</a>) can provide on-the-fly information on functions, parameters, etc..</p>
+<p>All major functionality is contained in the <a href="https://henningkerstan.github.io/heartbeat-led-pi/classes/HeartbeatLED.HeartbeatLED-1.html">HeartbeatLED class</a>, hence you will most likely only need to import this class:</p>
+<pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-0">HeartbeatLED</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-4">&#39;@henningkerstan/heartbeat-led-pi&#39;</span>
 </code></pre>
-				<p>and then create an instance of that class for each heartbeat LED you require. Have a look at the <a href="https://github.com/henningkerstan/heartbeat-led-pi/blob/main/src/heartbeat-led-pi.ts">source code of the standalone application</a> and the <a href="https://henningkerstan.github.io/heartbeat-led-pi/classes/HeartbeatLED.HeartbeatLED-1.html">documentation of the HeartbeatLED class</a> to see how it works in detail.</p>
-				<a href="#4-contributing" id="4-contributing" style="color: inherit; text-decoration: none;">
-					<h2>4. Contributing</h2>
-				</a>
-				<p>Contact the main author (<a href="https://henningkerstan.de">Henning Kerstan</a>) if you want to contribute. More details will be available here soon.</p>
-				<p>This project uses <a href="https://semver.org/">semantic versioning</a>. However, despite most of the API being ready, note that since we are still in development (version 0.x.y), anything may yet change at any time.</p>
-				<a href="#5-version-history" id="5-version-history" style="color: inherit; text-decoration: none;">
-					<h2>5. Version history</h2>
-				</a>
-				<p>Please have a look at the git commit log for a version history.</p>
-				<a href="#6-license" id="6-license" style="color: inherit; text-decoration: none;">
-					<h2>6. License</h2>
-				</a>
-				<p>Copyright 2021 <a href="https://henningkerstan.de">Henning Kerstan</a></p>
-				<p>SPDX-License-Identifier: Apache-2.0</p>
-			</div>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="modules.html">Modules</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/HeartbeatLED.html">HeartbeatLED</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/index.html">index</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-<footer class="with-border-bottom">
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-			</ul>
-		</div>
-	</div>
-</footer>
-<div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
-</div>
-<div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+<p>and then create an instance of that class for each heartbeat LED you require. Have a look at the <a href="https://github.com/henningkerstan/heartbeat-led-pi/blob/main/src/heartbeat-led-pi.ts">source code of the standalone application</a> and the <a href="https://henningkerstan.github.io/heartbeat-led-pi/classes/HeartbeatLED.HeartbeatLED-1.html">documentation of the HeartbeatLED class</a> to see how it works in detail.</p>
+
+<a href="#4-contributing" id="4-contributing" style="color: inherit; text-decoration: none;">
+  <h2>4. Contributing</h2>
+</a>
+<p>Contact the main author (<a href="https://henningkerstan.de">Henning Kerstan</a>) if you want to contribute. More details will be available here soon.</p>
+<p>This project uses <a href="https://semver.org/">semantic versioning</a>. However, despite most of the API being ready, note that since we are still in development (version 0.x.y), anything may yet change at any time.</p>
+
+<a href="#5-version-history" id="5-version-history" style="color: inherit; text-decoration: none;">
+  <h2>5. Version history</h2>
+</a>
+<p>Please have a look at the git commit log for a version history.</p>
+
+<a href="#6-license" id="6-license" style="color: inherit; text-decoration: none;">
+  <h2>6. License</h2>
+</a>
+<p>Copyright 2021 <a href="https://henningkerstan.de">Henning Kerstan</a></p>
+<p>SPDX-License-Identifier: Apache-2.0</p>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Modules</a></li><li class=" tsd-kind-module"><a href="modules/HeartbeatLED.html">HeartbeatLED</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>

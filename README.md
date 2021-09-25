@@ -54,7 +54,7 @@ The library also comes with an online [documentation](https://henningkerstan.git
 All major functionality is contained in the [HeartbeatLED class](https://henningkerstan.github.io/heartbeat-led-pi/classes/HeartbeatLED.HeartbeatLED-1.html), hence you will most likely only need to import this class:
 
 ```typescript
-import { HeartbeatLED } from 'heartbeat-led-pi'
+import { HeartbeatLED } from '@henningkerstan/heartbeat-led-pi'
 ```
 
 and then create an instance of that class for each heartbeat LED you require. Have a look at the [source code of the standalone application](https://github.com/henningkerstan/heartbeat-led-pi/blob/main/src/heartbeat-led-pi.ts) and the [documentation of the HeartbeatLED class](https://henningkerstan.github.io/heartbeat-led-pi/classes/HeartbeatLED.HeartbeatLED-1.html) to see how it works in detail.

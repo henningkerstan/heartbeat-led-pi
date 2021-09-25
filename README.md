@@ -63,7 +63,7 @@ and then create an instance of that class for each heartbeat LED you require. Ha
 
 Contact the main author ([Henning Kerstan](https://henningkerstan.de)) if you want to contribute. More details will be available here soon.
 
-This project uses [semantic versioning](https://semver.org/). However, despite most of the API being ready, note that since we are still in development (version 0.x.y), anything may yet change at any time.
+This project uses [semantic versioning](https://semver.org/).
 
 ## 5. Version history
 
